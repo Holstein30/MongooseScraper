@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebDev Subreddit Scraper</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h1 class="display-3">r/Webdev Scraper</h1>
+                <p class="lead">See the Latest From the Webdev Subreddit</p>
+                <hr class="my-4">
+                <div class="buttonInline">
+                    <div>
+                        <a href="/" class="btn btn-primary btn-lg" role="button">Home</a>
+                    </div>
+                    <div>
+                        <form action="/scrape" method="get">
+                            <button class="btn btn-primary btn-lg" role="button" id="scrape-articles">Generate Articles</button>
+                        </form>
+                    </div>
+                    <div>
+                        <a href="/saved" class="btn btn-primary btn-lg" role="button">Saved Articles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="wrapper">
+        {{{body}}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

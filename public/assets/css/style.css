@@ -1,0 +1,112 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1516254092588-170acff77587?ixlib=rb-0.3.5&s=8f9d8659b1bfeb1ff5de0f9f008e2744&auto=format&fit=crop&w=2556&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.jumbotron {
+  opacity: 0.7;
+  background: rgba(239, 239, 239, 0.2);
+  color: #000;
+  padding: 0.1em 0.1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+  height: 400px;
+}
+
+#saved-div {
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+  height: 400px;
+}
+
+#notes {
+  float: right;
+  width: 30%;
+  padding-left: 30px;
+}
+
+.buttonInline {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  font-size: 2.3em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+textarea,
+input {
+  display: block;
+  width: 100%;
+  background-color: rgb(249, 249, 249);
+}
+
+input {
+  height: 36px;
+  font-size: 24px;
+}
+
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+p,
+a {
+  color: #000;
+}
+
+hr {
+  color: #000;
+}

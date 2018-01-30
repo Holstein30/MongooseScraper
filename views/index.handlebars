@@ -1,0 +1,13 @@
+<div class="row" id="articles">
+    {{#each articles}}
+    <h2>{{this.title}}</h2>
+    <div class="buttonInline">
+        <button onClick="window.open('http://www.reddit.com{{this.link}}')" class="btn btn-primary">Go To Post</button>
+        <button data-id='{{this._id}}' class="btn btn-success note-btn">View Note</button>
+        <form action="/save/{{this.id}}" method="POST">
+            <button type="submit" class="save-btn btn btn-danger">Save Post</button>
+        </form>
+    </div>
+    {{/each}}
+</div>
+<div class="row" id="notes"></div>
