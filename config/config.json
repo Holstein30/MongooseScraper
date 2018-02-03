@@ -1,0 +1,8 @@
+{
+  "db": {
+    "uri": "mongodb://Dale:poppylop@ds223738.mlab.com:23738/webdevscraper"
+  },
+  "example": {
+    "uri": "mongodb://username:secret@ds999999.mlab.com:37710/classexample"
+  }
+}
